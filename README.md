@@ -1,3 +1,3 @@
 ## READ ME
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An e-commerce storefront built with React.js and Bootstrap.
