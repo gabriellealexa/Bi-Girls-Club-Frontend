@@ -36,3 +36,86 @@
     transform: rotate(360deg);
   }
 }
+
+.header {
+}
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.main-container{
+  width: 85%
+}
+
+.top-logo{
+  width: 33%;
+  float: left;
+}
+
+.menu {
+  width: 66%;
+  float: right;
+}
+
+.cards {
+  display: inline-flex;
+  flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	padding: 30px;
+	margin: 10px;
+	text-align: center;
+	width: 275px;
+	max-width: 100%;
+}
+
+.card small {
+	color: #00000;
+  display: block;
+  font-weight: 800;
+}
+
+.card button {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	color: #999;
+	padding: 10px 25px;
+	margin-top: 25px;
+}
+
+.card.active button {
+	background-color: #748DFF;
+  border: 0;
+	box-shadow: 0px 2px 5px rgba(116, 141, 255, 0.7);
+	color: #fff;
+}
+
+.card h5 {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.card img {
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+	width: 275px;
+}
+
+.card.active {
+  border: 0px;
+  align-items: center;
+}
+
+.card.active button {
+	background-color: #2c48d0;
+	border: 0;
+	box-shadow: 0px 2px 5px rgba(116, 141, 255, 0.7);
+	color: #fff;
+}
+
+* {
+	box-sizing: border-box;
+}
