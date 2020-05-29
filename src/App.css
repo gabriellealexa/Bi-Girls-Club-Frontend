@@ -72,12 +72,6 @@
 	max-width: 100%;
 }
 
-.card small {
-	color: #00000;
-  display: block;
-  font-weight: 800;
-}
-
 .card button {
 	background-color: #fff;
 	border: 1px solid #ccc;
@@ -100,7 +94,6 @@
 }
 
 .card img {
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 	width: 275px;
 }
 
@@ -109,11 +102,37 @@
   align-items: center;
 }
 
+.card.details {
+  width: 100%;
+  border: 0px;
+  align-items: center;
+  text-align: center;
+}
+
+.card.details img {
+  width:375px;
+}
+
 .card.active button {
 	background-color: #2c48d0;
 	border: 0;
 	box-shadow: 0px 2px 5px rgba(116, 141, 255, 0.7);
 	color: #fff;
+}
+
+.cart th {
+  text-align: center;
+}
+
+.cart td {
+  padding: 20px;
+}
+
+.myCartFormat {
+  text-align: center;
+  justify-items: center;
+  width: 100%;
+  display: inline-grid;
 }
 
 * {
