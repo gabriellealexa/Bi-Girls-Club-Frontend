@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel'
+import Button from 'react-bootstrap/Button'
 
 class MainCarousel extends React.Component {
 
@@ -16,21 +17,21 @@ class MainCarousel extends React.Component {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3>New Acessories!</h3>
+      <Button>Shop Now</Button>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://code.gabriellealexa.com/bgccarousel1.png"
+      src="https://code.gabriellealexa.com/carousel3.png"
       samesite="None"
       alt="Third slide"
     />
 
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3>Summer is here ;)</h3>
+      <p>Get your gear for Pride.</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>

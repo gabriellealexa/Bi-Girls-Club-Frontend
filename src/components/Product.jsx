@@ -35,10 +35,8 @@ class Product extends React.Component {
     })
   }).then(resp => resp.json())
   .then(newCartObj => {
-    console.log(newCartObj)
-
-
-
+    let notif = document.querySelector('.success')
+    notif.innerText = "Success! Added to Cart."
   })
  }
 
@@ -54,7 +52,7 @@ class Product extends React.Component {
 		<h5>{this.state.product.title}</h5>
 		<small>${this.state.product.price}.00</small>
 
-      <Button
+      <Button className="success"
               onClick={() => this.handleAddtoCart(this.state.product)}>Add to Cart</Button>
             </div>
 

@@ -9,8 +9,8 @@ class Home extends React.Component {
   return (
     <div className="App">
       <MainCarousel /><br /><br />
-       This is welcome text.<br /><br />
-       <Button variant="dark" href="/products">Shop Now</Button><br /><br />
+       Queer Enough.<br /><br />
+       10% of proceeds go to the Trevor Project.<br /><br />
        <hr />
        <small>© 2020 <a href="http://gabriellealexa.com">Gabrielle Alexa</a></small><br /><br />
 

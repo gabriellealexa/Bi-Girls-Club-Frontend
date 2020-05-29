@@ -63,11 +63,17 @@ class Cart extends React.Component {
     }
 
     handleRemoveItem = (id) => {
-        console.log()
+        let removeOnDom = document.getElementById(`${id}`)
+        let removeButton = document.getElementById(`chngCheckout`)
         this.state.myJoiners.map(joiner => {
             if (joiner.item.id === id) {
                 fetch(`http://localhost:3000/cart_items/${joiner.id}`, {
                     method: 'DELETE'
+                })
+                .then(resp => resp.json())
+                .then(newArray => {
+                   removeOnDom.remove()
+                   removeButton.innerHTML = "Cart is empty!"
                 })
             }
         })
@@ -89,7 +95,7 @@ class Cart extends React.Component {
             { this.state.myCart.items !== undefined ? this.state.myCart.items.map((arrayInCart) => {
                 return (
                     
-                        <table className="cart" key={arrayInCart.id}>
+                        <table id={arrayInCart.id} className="cart" key={arrayInCart.id}>
                             <thead>
                         <tr>
                     <th>Item #</th>
@@ -109,6 +115,9 @@ class Cart extends React.Component {
             }) :
             "Cart is loading..." }
 
+                
+                    { Array.isArray(this.state.myCart.items) && this.state.myCart.items.length ? <center><Button id="chngCheckout">Checkout</Button></center> : <center><Button>Cart is empty!</Button></center> 
+                   }
 
     </div>
   );
